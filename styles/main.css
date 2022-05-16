@@ -1,0 +1,252 @@
+:root {
+  --button: #FF0000;
+  --main-background: #C4C4C4;
+  --background: #E5E5E5;
+  --text: #000;
+  --footer: #000;
+  --text-description: #9C9696;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: var(--background);
+  min-width: 1440px;
+  font-size: 1.6rem;
+  color: var(--text);
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(40%, var(--background)), color-stop(25%, var(--main-background)));
+  background-image: linear-gradient(to right, var(--background) 40%, var(--main-background) 25%);
+}
+
+header nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1.6rem;
+  width: 95%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+header nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header nav ul li {
+  list-style: none;
+  text-transform: uppercase;
+  margin-right: 5rem;
+  padding: 2rem;
+}
+
+header nav ul li:last-child {
+  margin: 0;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: var(--text);
+  font-weight: 700;
+  padding: .5rem;
+}
+
+header nav ul li a:hover {
+  border-bottom: 1px solid black;
+}
+
+header nav ul li .input-pesquisar {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 4rem;
+  width: 22rem;
+  height: 4rem;
+  background: url(/assets/icon-search.svg);
+  background-size: 2rem;
+  background-repeat: no-repeat;
+  background-position-x: start;
+  background-position-y: center;
+  background-color: white;
+  background-position: 1rem;
+  border: none;
+}
+
+header nav ul li .input-pesquisar:focus {
+  outline: none;
+}
+
+header nav .logo, header nav .bag {
+  cursor: pointer;
+}
+
+section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+section main {
+  width: 40%;
+}
+
+section main .buy-product {
+  text-align: start;
+  display: -ms-inline-grid;
+  display: inline-grid;
+  width: 35.7rem;
+  position: absolute;
+  top: 20%;
+  left: 10%;
+}
+
+section main .buy-product h1 {
+  font-size: 6rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
+section main .buy-product p {
+  color: var(--text-description);
+  margin-bottom: 3rem;
+}
+
+section main .buy-product strong {
+  font-size: 4rem;
+  font-weight: 700;
+  margin-bottom: 3rem;
+}
+
+section main .buy-product button {
+  width: 27.4rem;
+  height: 9rem;
+  background: var(--button);
+  color: white;
+  font-size: 2.4rem;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+  -webkit-transition: -webkit-filter 0.2s;
+  transition: -webkit-filter 0.2s;
+  transition: filter 0.2s;
+  transition: filter 0.2s, -webkit-filter 0.2s;
+}
+
+section main .buy-product button:hover {
+  -webkit-filter: brightness(0.9);
+          filter: brightness(0.9);
+}
+
+section .product-images {
+  background: var(--main-background);
+  width: 60%;
+  height: 100vh;
+}
+
+section .product-images .picture-1 {
+  width: 47.9rem;
+  position: absolute;
+  top: 20%;
+  left: 55%;
+}
+
+section .product-images .more-images {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  position: relative;
+  top: 60%;
+}
+
+section .product-images .more-images .picture-2, section .product-images .more-images .picture-3, section .product-images .more-images .picture-4 {
+  width: 26.5rem;
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 16.66rem;
+}
+
+footer .img-video {
+  width: 25rem;
+  height: 100%;
+}
+
+footer ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer ul li {
+  list-style: none;
+  text-transform: uppercase;
+  margin-right: 5rem;
+  padding: 2rem;
+  text-align: center;
+}
+
+footer ul li a {
+  text-decoration: none;
+  color: var(--text);
+  font-weight: 700;
+  padding: .5rem;
+}
+
+footer ul li a:hover {
+  border-bottom: 1px solid black;
+}
+
+footer ul li a:first-child {
+  margin-left: 3rem;
+}
+
+footer button {
+  width: 43.7rem;
+  height: 100%;
+  background: var(--footer);
+  background-image: url(/assets/icon-arrow.svg);
+  background-repeat: no-repeat;
+  background-position-x: 80%;
+  background-position-y: center;
+  color: white;
+  text-align: center;
+  font-size: 2.4rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  cursor: pointer;
+}
+/*# sourceMappingURL=main.css.map */
